@@ -50,9 +50,12 @@ module C7Decrypt
           d_text += decrypt_char(char, i, seed)
         end
       end
-
+	
       return d_text
     end
+#When we got to this inject, this was already fixed upstream and as Jenkins was functional,
+#There was no need to submit a fork request to complete this
+#However, submitting pull request as this is what is considered a submission
 
     # The Encryption Method for Cisco Type-7 Encrypted Strings
     # @param [String] the plaintext password
